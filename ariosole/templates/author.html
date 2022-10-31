@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>ArioSole - Contact</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-liberty-market.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css'%}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 577 Liberty Market
+
+https://templatemo.com/tm-577-liberty-market
+
+-->
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+  body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      background: #4D32B5;
+      color: #333333;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+
+  ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  ::selection {
+      color: white;
+      background: #ff7675;
+  }
+
+  ::-webkit-selection {
+      color: white;
+      background: #ff7675;
+  }
+
+  ::-moz-selection {
+      color: white;
+      background: #ff7675;
+  }
+
+  input:focus {
+      outline: none;
+  }
+
+  .scrolltotop {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px 20px 0 0;
+      background: rgba(0, 0, 0, .5);
+      display: block;
+      text-align: center;
+      padding-top: 8px;
+      font-size: 22px;
+      color: #ffffff;
+      position: fixed;
+      right: 5px;
+      bottom: 5px;
+      display: none;
+      transition: 0.2s all ease;
+      -webkit-transition: 0.2s all ease;
+      -moz-transition: 0.2s all ease;
+  }
+
+  .scrolltotop:hover {
+      background: #000;
+      color: #fff;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+  }
+
+
+  /*-- header area start --*/
+
+  .logo a img {
+      display: inline-block;
+      width: 140px;
+  }
+
+  .header-wrapper {
+      padding: 20px 0;
+      border-bottom: 1px solid #e0e0e0;
+  }
+
+  /*-- header area end --*/
+  .contact-details-area {
+      width: 444px;
+      margin: 0 auto;
+  }
+
+  .intut-area label {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+  }
+
+  .intut-area input[type="submit"] {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      color: #fff;
+      background-color: #f10a0a; <<<Change the SEND MESSAGE BUTTON RED COLOUR HERE>>>>
+      font-size: 18px;
+      border-radius: 8px;
+      padding: 12px 9px;
+      border: 0;
+      outline: none;
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      margin-top: 18px;
+      margin-bottom: 10px;
+      height: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+  }
+
+  .intut-area input[type="submit"]:hover {
+      background-color: #0000FF;    <<<Change the SEND MESSAGE BUTTON Hover BLUE COLOUR HERE>>>>
+  }
+
+  .contact-details-area h1 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #fff;
+  }
+
+  .intut-area input {
+      display: block;
+      width: 100%;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      padding: 14px 18px;
+      margin-bottom: 22px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+  }
+
+  .intut-area h2 {
+      font-size: 12px;
+      margin-bottom: 60px;
+      text-align: center;
+      color: #0000007d;
+      margin-top: 18px;
+      font-family: 'Poppins', sans-serif;
+  }
+
+
+  /*-- main area end --*/
+
+  /*
+====================================
+Medium Screen - Others
+====================================
+*/
+  @media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+  /*
+====================================
+Small Screen - Tablate
+====================================
+*/
+  @media screen and (min-width: 768px) and (max-width: 991px) {}
+
+  /*
+====================================
+Small Screen - Mobile
+====================================
+*/
+  @media all and (max-width:534px) {
+      .contact-details-area {
+          width: 339px;
+          margin: 0 auto;
+      }
+
+      .intut-area h2 {
+          font-size: 11px;
+          margin-top: 12px;
+          margin-bottom: 60px;
+          text-align: center;
+          color: #0000007d;
+      }
+
+  }
+
+  @media all and (max-width:400px) {
+      .contact-details-area {
+          width: 332px;
+          margin: 0 auto;
+      }
+
+  }
+
+  @media all and (max-width:399px) {
+      .contact-details-area {
+          width: 293px;
+          margin: 0 auto;
+      }
+  }
+
+  @media all and (max-width:359px) {
+      .contact-details-area {
+          width: 250px;
+          margin: 0 auto;
+      }
+
+      .intut-area input {
+          font-size: 12px;
+      }
+
+      .intut-area h2 {
+          font-size: 9px;
+      }
+  }
+
+  /*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+  @media screen and (max-width: 576px) {}
+</style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'assets/images/logo.gif'%}" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'explore' %}">Token Store</a></li>
+                        <li><a href="{% url 'home' %}">Explore</a></li>
+                        <li><a href="author.html" class="active">Contact US</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="">{{user.username}}</a></li>
+                        {% else %}
+                        <li><a href="{% url 'Login' %}">Login</a></li>
+                        {% endif %}
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading normal-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>ArioSole , NFT Market Place.</h6>
+          <h2>Contact Us !!!</h2>
+          
+          <div class="buttons">
+            <div class="main-button">
+              <a href="{% url 'home' %}">Explore Our Items</a>
+            </div>
+            <div class="border-button">
+              <a href="create.html">Create Your NFT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+
+  <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- header area start -->
+    <div class="header">
+      <div class="container">
+          <div class="header-wrapper">
+              <div class="logo text-center">
+ 
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- header area end -->
+  <!-- contact details area start -->
+  <div class="contact">
+      <div class="container">
+          <div class="col-md-12">
+              <div class="contact-details-area">
+              
+
+                  <h1>Let's Get Started!</h1>
+                  <form action="https://sendy.bugaty.com/subscribe" method="POST" accept-charset="utf-8">
+                      <div class="intut-area"> <label for="name">YOUR NAME</label>
+                          <input type="text" name="name" placeholder=" Name..."id="name" />
+                          <label for="email">YOUR EMAIL</label>
+                          <input type="email" name="email" placeholder=" Email..."id="email" />
+                          <div style="display:none;">
+                              <label for="hp">HP</label>
+                              <input type="text" name="hp" id="hp" />
+                          </div>
+                          <input type="hidden" name="list" value="Lyp4q763pa763CHEA0892nvM0b5w" />
+                          <input type="hidden" name="subform" value="yes" />
+
+                                                      <label for="Message">MESSAGE
+</label><br />
+                          <input type="text" name="Message" placeholder=" Message..."
+                              id="Message" />
+                          <input type="submit" value="SEND A MESSAGE... " name="submit" id="submit">
+                         
+                      </div>
+                  </form>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+<footer style="background: #4D32B5;">
+<p>Copyright by ArioSole</p>
+</footer>
+  <!-- contact details area end -->
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js'%}"></script>
+
+  <script src="{% static 'assets/js/isotope.min.js'%}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js'%}"></script>
+
+  <script src="{% static 'assets/js/tabs.js'%}"></script>
+  <script src="{% static 'assets/js/popup.js'%}"></script>
+  <script src="{% static 'assets/js/custom.js'%}"></script>
+  </body>
+</html>
